@@ -11,3 +11,7 @@ okta:
   oauth2:
     issuer: https://dev-85402287.okta.com/oauth2/default
     audience: api://default
+    
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]" 
